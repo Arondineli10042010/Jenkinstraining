@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+         stage('Panggil TaskOne') {
+            steps {
+                build 'TaskOne'
+            }
+        }
+         stage('Panggil TaskTWO') {
+            steps {
+                build 'Tasktwo'
+            }
+        }
+         stage('Panggil TaskThree') {
+            steps {
+                build 'Taskthree'
+            }
+        }
+    }
+}
